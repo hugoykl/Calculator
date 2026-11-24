@@ -1,5 +1,6 @@
-import streamlit as st
 import math
+import streamlit as st
+
 
 # Title
 st.title("Basic Web Calculator")
@@ -25,6 +26,6 @@ if st.button("Calculate"):
     elif operation == "Divide":
         result = num1 / num2 if num2 != 0 else "Error: Division by zero"
     elif operation == "Sin (degrees)":
-    result = math.sin(math.radians(num1))
+        result = math.sin(math.radians(num1))
 
     st.success(f"Result: {result}")
